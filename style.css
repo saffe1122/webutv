@@ -1,19 +1,32 @@
 body{
-background-color: rgb(255, 185, 185);
-color:rgb(241, 6, 171);
-display: grid;
+background-color: rgb(221, 167, 167);
+color:rgb(255, 1, 179);
+
+}
+
+.wrapper{
+   margin:0 auto;
+   display: grid;
 grid-template-rows: 80px 80px auto 50px;
+gap:10px;
 grid-template-areas: 
 "header"
 "nav"
+"main"
 "footer";
 }
+
 header{
     grid-area: header;
 }
 
 nav{
     grid-area: nav;
+    background-color: rgb(238, 238, 238);
+}
+nav>ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 main{
     grid-area: main;
